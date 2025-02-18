@@ -1,4 +1,4 @@
-const button = document.getElementById("button");
+const button = document.getElementById("callButton");
 button.addEventListener("click", SendGetRequest);
 
 async function SendGetRequest()
