@@ -1,8 +1,7 @@
 const button = document.getElementById("callButton");
 button.addEventListener("click", SendGetRequest);
 
-async function SendGetRequest()
-{
+async function SendGetRequest() {
   let data = null;
   try {
     const response = await fetch("https://catfact.ninja/fact", {
@@ -15,6 +14,6 @@ async function SendGetRequest()
     console.log(data);
     window.alert(data.fact);
   } catch(error) {
-  console.log(error);
+    console.log(error);
   }
 }
