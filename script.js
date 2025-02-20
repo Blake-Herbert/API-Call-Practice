@@ -12,7 +12,7 @@ async function SendGetRequest() {
     });
     data = await response.json();
     console.log(data);
-    // window.alert(data);
+    window.alert(data.fact);
   } catch(error) {
     console.log(error);
   }
